@@ -1,27 +1,54 @@
-/* Outdated CSS */
-body {
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-size: 1.5rem;
 }
 
-h1 {
-    margin: 0;
+a{
+    text-decoration: none;
+    color: #ffffff;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
+header{
+    background:#ccc ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
 }
 
-li {
-    margin: 0;
-    padding: 0;
+main{
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
 }
 
-p {
-    margin: 0;
-    padding: 0;
+nav{
+    width: 20%;
+    height: auto;
+    margin-right: 1rem;
+    padding: 1rem 0 0 1rem;
+    background: #313131;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container{
+    margin: 1.5rem;
+    display: grid;
+    gap: 2rem;
+}
+.card{
+    padding: 1.5rem;
+    border: #313131 solid 1rem;
+    border-radius: 2%;
 }
 
 img {
@@ -29,7 +56,23 @@ img {
     height: auto;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
+.sink1 {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+  }
+  
+  .sink2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  .sink3 {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+
+  footer{
+    display: flex;
+    justify-content: center;
+
+  }
