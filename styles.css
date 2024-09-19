@@ -6,7 +6,7 @@
 
 body{
     font-family: Arial, sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 a{
@@ -90,4 +90,39 @@ img{
     color: #ccc;
   }
 
-  
+@media screen and (min-width:1370px) {
+    body{
+        font-size: 18px;
+    }
+    nav{
+        width: 20%;
+    }
+    
+    img{
+        height: 400px;
+    }
+}
+    
+@media screen and (max-width:500px) {
+    body{
+        font-size: 14px;
+    }
+    nav{
+        width: 40%;
+        padding: .5rem;
+    
+    }
+    img{
+        height: 200px;
+    }
+    .container{
+        margin: .6rem;
+        display: flex;
+        flex-direction: column
+    }
+
+    .card{
+        height: 27rem;
+    }
+}
+
