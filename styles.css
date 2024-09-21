@@ -37,7 +37,7 @@ main{
 }
 
 nav{
-    width: 50%;
+    width: 30%;
     height: auto;
     margin-right: 1rem;
     padding: 1rem 0 0 1rem;
@@ -53,6 +53,7 @@ nav{
     display: grid;
     gap: 2rem;
 }
+
 .card{
     height: 43rem;
     padding: 1.5rem;
@@ -96,7 +97,7 @@ img{
     color: #fff;
   }
 
-@media screen and (min-width:1370px) {
+@media screen and (max-width:1370px) {
     body{
         font-size: 18px;
     }
@@ -108,8 +109,28 @@ img{
         height: 400px;
     }
 }
+
+@media screen and (max-width:985px) {
+    body{
+        font-size: 15px;
+    }
+    nav{
+        width: 30%;
+        padding: .7rem;
+    }
+
+    .card{
+        height: 24rem;
+        padding: 1rem;
+        margin-right: .9rem;
+    }
     
-@media screen and (max-width:500px) {
+    img{
+        height: 200px;
+    }
+}
+    
+@media screen and (max-width:800px) {
     body{
         font-size: 14px;
     }
@@ -121,6 +142,7 @@ img{
     img{
         height: 200px;
     }
+
     .container{
         margin: .6rem;
         display: flex;
