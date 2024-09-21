@@ -5,15 +5,21 @@
 }
 
 body{
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 1.2rem;
-    background: linear-gradient(#000411,#0a5342, #000411);
+    background: linear-gradient(120deg, #000411,#0c4d3d, #000411);
 }
 
 a{
     text-decoration: none;
     color: #ffffff;
     margin: .5rem 0;
+    transition:.5s;
+}
+
+a:hover{
+    text-decoration: underline #c689ff 3px;
+    transform: translateX(10px)
 }
 
 h2{
@@ -66,6 +72,12 @@ nav{
     justify-content: center;
     align-items: center;
     box-shadow: #6dfaff 0 2px 9px;
+    transition:.6s;
+}
+
+.card:hover{
+    box-shadow: #c689ff 0 0 10px 10px;
+    transform: translateY(-10px)
 }
 
 img{
